@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="task-3">
+        <table>
+            <caption>
+                Standderd Calculator
+            </caption>
+            <tr>
+                <td colspan="5">
+                    <p id="old-result"></p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <div>
+                        <input type="text" disabled id="result" value="0" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="earse()">Del</button>
+                </td>
+                <td>
+                    <button onclick="CE()">CE</button>
+                </td>
+                <td>
+                    <button onclick="deleteall()">C</button>
+                </td>
+                <td>
+                    <button onclick="divsion()">÷</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="addNumber(this)" class="digit">
+                        7
+                    </button>
+                </td>
+                <td>
+                    <button onclick="addNumber(this)" class="digit">
+                        8
+                    </button>
+                </td>
+                <td>
+                    <button onclick="addNumber(this)" class="digit">
+                        9
+                    </button>
+                </td>
+                <td>
+                    <button onclick=" multiple()">×</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="addNumber(this)" class="digit">
+                        4
+                    </button>
+                </td>
+                <td>
+                    <button onclick="addNumber(this)" class="digit">
+                        5
+                    </button>
+                </td>
+                <td>
+                    <button onclick="addNumber(this)" class="digit">
+                        6
+                    </button>
+                </td>
+                <td>
+                    <button onclick="minus()">-</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="addNumber(this)" class="digit">
+                        1
+                    </button>
+                </td>
+                <td>
+                    <button onclick="addNumber(this)" class="digit">
+                        2
+                    </button>
+                </td>
+                <td>
+                    <button onclick="addNumber(this)" class="digit">
+                        3
+                    </button>
+                </td>
+                <td>
+                    <button onclick="plus()">+</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button onclick="addNumber(this)" class="digit">
+                        0
+                    </button>
+                </td>
+                <td>
+                    <button onclick="addNumber(this)">.</button>
+                </td>
+                <td>
+                    <button onclick="showresult()">=</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
